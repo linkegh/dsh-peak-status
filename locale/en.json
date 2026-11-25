@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Peak / Off-Peak Status & Balance",
+    "description": "Shows the DeepSeek price phase, the countdown to the next switch and the signed-in account balance in the conversation header, and raises one wrap-up reminder per peak block while the agent works: reply 暂停 to have a handoff written and the session paused."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@local/dsh-peak-status",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DeepSeek peak/off-peak price phase, countdown to the next switch and account balance in the Harness top bar, plus a once-per-peak-block wrap-up reminder during peak hours.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LIMITATIONS.txt"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
